@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            width: 100%;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+
+        .row{
+            width: 80%;
+            max-width: 1170px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap:50px 30px;
+        }
+
+        .row .left{
+            overflow: hidden;
+
+        }
+
+        .row .left img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            
+        }
+
+        .row .right{
+            display: flex;
+            align-items: center;
+
+        }
+
+        .row .right .content{
+            padding-left: 20px;
+            
+        }
+
+        .mid {
+        left: 0;
+        display: inline-block;
+        width: 100vw;
+        margin: 29px auto;
+        border: 2px solid goldenrod;
+        border-radius: 20px;
+        background-color: rgb(238, 224, 26);
+        position: absolute;
+    }
+
+    .mid ul li h6{
+        position: relative;
+        left: 10px;
+    }
+
+    .navbar {
+        display: inline-block;
+        /* margin:50px 50px; */
+        padding: 50px 200px;
+        left: 20px;
+        position: relative;
+    }
+
+    .navbar li {
+        display: inline;
+        font-size: 16px;
+    }
+
+    .navbar li a {
+        /* display: inline-block; */
+        color: black;
+        text-decoration: none;
+        padding: 30px 20px;
+
+    }
+    </style>
+  </head>
+  
+
+
+  <body>
+
+    <header class="header">
+        
+
+        <div class="mid">
+           
+            <ul class="navbar">
+                <li><h6>GF make your home</h6></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact </a></li>
+                
+            </ul>
+        </div>
+
+       
+    </header>
+
+
+    <div class="row">
+      <div class="left">
+        <img src="bgm.jpg" alt="" />
+      </div>
+
+      <div class="right">
+        <div class="content">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam
+            quos delectus dicta! Atque ducimus libero voluptate veniam
+            reprehenderit! Libero eius recusandae nihil dolorem ad earum
+            provident, quaerat numquam dicta sit vero, placeat laboriosam,
+            mollitia est nesciunt? Dolorem deserunt quae, doloremque id
+            reprehenderit, vero ut optio laboriosam dolorum, distinctio minus
+            ea?
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
